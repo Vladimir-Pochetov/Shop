@@ -4,10 +4,16 @@
     box-sizing: border-box;
 }
 
-.btn {
-    color: #F26376;
-    padding: 15px 39px;
-    border-color: #F26376;
+.button {
+    display: flex;
+    justify-content: center;
+    &-btn {
+        text-decoration: none;
+        color: #F26376;
+        border: 1px solid #F26376;
+        padding: 15px 39px;
+        margin: 48px 0 98px 0;
+    }
 }
 
 body {
@@ -36,7 +42,7 @@ body {
     }
 }
 
-.offer {
+.promo {
     background-color: #F1E4E6;
     height: 765px;
     &-wrap {
@@ -44,20 +50,62 @@ body {
         background-image: url(../img/cart.png);
         background-repeat: no-repeat;
         background-position-x: -190px;
-
+        display: flex;
+        align-items: center;
+        justify-content: end;
     }
-
+    &-title {
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 38px;
+        color: #222222;
+    }
+    &-title-big {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px;
+        color: #222222;
+    }
+    &-title-pink {
+        color: #F16D7F;
+    }
 }
 
-.category {
+.offer {
     padding-top: 65px;
-    &-cart {
+    &-item {
+        width: 360px;
+        height: 260px;
+        text-align: center;
         display: flex;
-        justify-content: space-between;
-        position: relative;
+        justify-content: center;
+        flex-direction: column;
     }
-    &-accesories {
-        padding-top: 30px;
+    &-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &-name-pink {
+        color: #F16D7F;
+    }
+    &-item-white {
+        color: #fff;
+    }
+    &-item-women {
+        background-image: url(../img/offer-woman.jpg)
+    }
+    &-item-men {
+        background-image: url(../img/offer-man.jpg);
+    }
+    &-item-kids{
+        background-image: url(../img/offer-kids.jpg);
+    }
+    &-item-accesories {
+        background-image: url(../img/offer-accesories.jpg);
+        width: 100%;
+        height: 180px;
+        margin-top: 30px;
     }
 }
 
@@ -107,9 +155,6 @@ body {
         margin: 162px;
         margin: 0 auto;
     }
-
-
-
     &-price {
         color: #F16D7F;
         font-size: 16px;
@@ -124,7 +169,6 @@ body {
     color: #FBFBFB;
     font-size: 19px;
     line-height: 24px;
-
 }
 
 .connection {

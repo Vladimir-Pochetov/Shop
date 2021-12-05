@@ -5,10 +5,21 @@
           box-sizing: border-box;
 }
 
-.btn {
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button-btn {
+  text-decoration: none;
   color: #F26376;
+  border: 1px solid #F26376;
   padding: 15px 39px;
-  border-color: #F26376;
+  margin: 48px 0 98px 0;
 }
 
 body {
@@ -46,34 +57,101 @@ body {
   margin: 33px;
 }
 
-.offer {
+.promo {
   background-color: #F1E4E6;
   height: 765px;
 }
 
-.offer-wrap {
+.promo-wrap {
   height: 765px;
   background-image: url(../img/cart.png);
   background-repeat: no-repeat;
   background-position-x: -190px;
-}
-
-.category {
-  padding-top: 65px;
-}
-
-.category-cart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.promo-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38px;
+  color: #222222;
+}
+
+.promo-title-big {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  color: #222222;
+}
+
+.promo-title-pink {
+  color: #F16D7F;
+}
+
+.offer {
+  padding-top: 65px;
+}
+
+.offer-item {
+  width: 360px;
+  height: 260px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.offer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
 }
 
-.category-accesories {
-  padding-top: 30px;
+.offer-name-pink {
+  color: #F16D7F;
+}
+
+.offer-item-white {
+  color: #fff;
+}
+
+.offer-item-women {
+  background-image: url(../img/offer-woman.jpg);
+}
+
+.offer-item-men {
+  background-image: url(../img/offer-man.jpg);
+}
+
+.offer-item-kids {
+  background-image: url(../img/offer-kids.jpg);
+}
+
+.offer-item-accesories {
+  background-image: url(../img/offer-accesories.jpg);
+  width: 100%;
+  height: 180px;
+  margin-top: 30px;
 }
 
 .products {
