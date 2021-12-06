@@ -229,9 +229,19 @@ body {
   line-height: 24px;
 }
 
+.features-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .connection {
-  background: url("../img/photo-subscribe.png");
+  background-image: url(../img/photo-subscribe.png);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .connection-reviews-icon {
@@ -241,7 +251,12 @@ body {
 .connection-reviews {
   font-size: 20px;
   line-height: 24px;
-  padding-bottom: 126px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer {

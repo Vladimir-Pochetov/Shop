@@ -171,11 +171,16 @@ body {
     color: #FBFBFB;
     font-size: 19px;
     line-height: 24px;
+    &-title {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .connection {
-    background: url("../img/photo-subscribe.png");
-    background-repeat: no-repeat;
+	background-image: url(../img/photo-subscribe.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 
     &-reviews-icon {
         margin-top: 97px;
@@ -183,8 +188,10 @@ body {
     &-reviews {
         font-size: 20px;
         line-height: 24px;
-        padding-bottom: 126px;
+        display: flex;
+        justify-content: space-between;
     }
+
 }
 
 .footer {
