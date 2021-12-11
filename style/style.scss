@@ -298,10 +298,27 @@ body {
         font-size: 16px;
         line-height: 19px;
     }
-    &-instagram {
-        margin: 0 7px;
+    &--socials {
+        display: flex;
+        justify-content: flex-end;
     }
-    &-pinterest {
-        margin-right: 7px;
+    &-socials {
+        text-decoration: none;
+        color: #000000;
+        font-size: 20px;
+        background-color: #FFFFFF;
+        width: 31px;
+        height: 32px;
+        padding: 7px 10px;
+        margin: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+    &-socials:hover {
+        color: #FFFFFF;
+        background-color: #F16D7F;
+
+    }
+
 }

@@ -432,11 +432,37 @@ body {
   line-height: 19px;
 }
 
-.footer-instagram {
-  margin: 0 7px;
+.footer--socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.footer-pinterest {
-  margin-right: 7px;
+.footer-socials {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  background-color: #FFFFFF;
+  width: 31px;
+  height: 32px;
+  padding: 7px 10px;
+  margin: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-socials:hover {
+  color: #FFFFFF;
+  background-color: #F16D7F;
 }
 /*# sourceMappingURL=style.css.map */
