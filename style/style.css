@@ -5,23 +5,17 @@
           box-sizing: border-box;
 }
 
-.button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.button-btn {
-  text-decoration: none;
-  color: #F26376;
-  border: 1px solid #F26376;
-  padding: 15px 39px;
-  margin: 48px 0 98px 0;
-}
-
+/*.button {
+    display: flex;
+    justify-content: center;
+    &-btn {
+        text-decoration: none;
+        color: #F26376;
+        border: 1px solid #F26376;
+        padding: 15px 39px;
+        margin: 48px 0 98px 0;
+    }
+}*/
 body {
   font-family: 'Lato', sans-serif;
 }
@@ -181,12 +175,39 @@ body {
   margin-top: 69px;
 }
 
-.products-title-tt {
+.products-title-text {
   color: #9F9F9F;
   font-size: 14px;
   line-height: 17px;
   text-align: center;
   padding: 6px 0 48px;
+}
+
+.products-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.products-card {
+  width: 360px;
+  background-color: #F8F8F8;
+}
+
+.products-linc {
+  text-decoration: none;
+}
+
+.products-foto {
+  margin: 162px;
+  margin: 0 auto;
 }
 
 .products-name {
@@ -203,31 +224,28 @@ body {
   padding: 0 16px 18px;
 }
 
-.products-cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 30px;
-}
-
-.products-card {
-  width: 360px;
-  background-color: #F8F8F8;
-}
-
-.products-foto {
-  margin: 162px;
-  margin: 0 auto;
-}
-
 .products-price {
   color: #F16D7F;
   font-size: 16px;
   line-height: 19px;
   padding: 0 0 20px 18px;
+}
+
+.products-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.products-button-btn {
+  text-decoration: none;
+  color: #F26376;
+  border: 1px solid #F26376;
+  padding: 15px 39px;
+  margin: 48px 0 98px 0;
 }
 
 .features {
