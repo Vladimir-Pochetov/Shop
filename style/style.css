@@ -20,6 +20,7 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+/* home */
 .wrap {
   width: 1140px;
   margin: 0 auto;
@@ -199,6 +200,7 @@ body {
 .products-card {
   width: 360px;
   background-color: #F8F8F8;
+  margin-bottom: 30px;
 }
 
 .products-linc {
@@ -464,5 +466,61 @@ body {
 .footer-socials:hover {
   color: #FFFFFF;
   background-color: #F16D7F;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+/* home end */
+/* catalog */
+.inner {
+  background-color: #F8F3F4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 148px;
+  margin-bottom: 51px;
+}
+
+.inner-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #F16D7F;
+}
+
+.inner-navigation-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inner-navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.inner-nav {
+  margin: 6px;
+}
+
+.inner-nav::before {
+  content: '/';
+  margin-right: 10px;
+}
+
+.inner-nav:first-child::before {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

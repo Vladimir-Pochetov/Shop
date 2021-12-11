@@ -19,7 +19,7 @@
 body {
     font-family: 'Lato', sans-serif;
 }
-
+/* home */
 .wrap {
     width: 1140px;
     margin: 0 auto;
@@ -146,6 +146,7 @@ body {
     &-card {
         width: 360px;
         background-color: #F8F8F8;
+        margin-bottom: 30px;
     }
     &-linc {
         text-decoration: none;
@@ -318,7 +319,45 @@ body {
     &-socials:hover {
         color: #FFFFFF;
         background-color: #F16D7F;
-
+        transition: 0.2s;
     }
 
 }
+/* home end */
+
+/* catalog */
+.inner {
+    background-color: #F8F3F4;
+    display: flex;
+    justify-content: space-around;
+    height: 148px;
+    margin-bottom: 51px;
+    &-name {
+        display: flex;
+        align-items: center;
+        color: #F16D7F;
+    }
+    &-navigation-bar {
+        display: flex;
+        align-items: center;
+    }
+    &-navigation {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    &-nav {
+        margin: 6px;
+    }
+    &-nav::before {
+        content: '/';
+        margin-right: 10px;
+    }
+    &-nav:first-child::before {
+        display: none;
+    }
+
+}
+
+
