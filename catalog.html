@@ -41,26 +41,31 @@
     </header>
 
     <section class="inner">
-        <h1 class="inner-name">
-            NEW ARRIVALS
-        </h1>
-        <nav class="inner-navigation-bar">
-            <ul class="inner-navigation">
-                <li class="inner-nav">
-                    <a class="inner-nav-linc" href="catalog.html">HOME</a>
-                </li>
-                <li class="inner-nav">
-                    <a class="nav-linc" href="#">MEN</a>
-                </li>
-                <li class="inner-nav">
-                    <a class="nav-linc" href="#">NEW ARRIVALS</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="wrap inner-wrap">
+            <h1 class="inner-name">
+                NEW ARRIVALS
+            </h1>
+            <nav class="inner-navigation-bar">
+                <ul class="inner-navigation">
+                    <li class="inner-nav">
+                        <a class="inner-linc" href="catalog.html">HOME</a>
+                    </li>
+                    <li class="inner-nav">
+                        <a class="inner-linc" href="#">MEN</a>
+                    </li>
+                    <li class="inner-nav">
+                        <a class="inner-linc inner-linc--active" href="#">NEW ARRIVALS</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </section>
 
     <section class="products">
         <div class="wrap products-wrap">
+            <div class="products-filter">
+
+            </div>
             <ul class="products-cards">
                 <li class="products-card">
                     <a class="products-linc" href="#"><img class="products-foto" src="img/card-man.png" alt="man">
@@ -199,9 +204,44 @@
                 </li>
             </ul>
 
-            <div class="products-button">
-                <a class="products-button-btn" href="">Browse All Product</a>
-            </div>
+            <nav class="products-navigation">
+                <ul class="products-pagination">
+                    <li class="products-pagination-pag">
+                        <a class="products-pag-link" href="#">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                    </li>
+                    <li class="products-pag">
+                        <a href="#">1</a>
+                    </li>
+                    <li class="products-pag">
+                        <a href="#">2</a>
+                    </li>
+                    <li class="products-pag">
+                        <a href="#">3</a>
+                    </li>
+                    <li class="products-pag">
+                        <a href="#">4</a>
+                    </li>
+                    <li class="products-pag">
+                        <a href="#">5</a>
+                    </li>
+                    <li class="products-pag">
+                        <a href="#">6</a>
+                    </li>
+                    <li class="products-pag">
+                        <a href="#">.....</a>
+                    </li>
+                    <li class="products-pag">
+                        <a href="#">20</a>
+                    </li>
+                    <li class="products-pag">
+                        <a class="products-pag-link" href="#">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </section>
 
