@@ -1,6 +1,6 @@
-$bgcolar: #222222;
-$colorletters: #F16D7F;
+@import url(structure/_var.scss);
 
+@import url(structure/_mixins.scss);
 
 * {
     margin: 0;
