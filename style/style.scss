@@ -92,6 +92,8 @@ body {
     }
     &-list {
         list-style: none;
+        padding: 0;
+        margin: 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -144,6 +146,8 @@ body {
         padding: 6px 0 48px;
     }
     &-cards {
+        margin: 0;
+        padding: 0;
         display: flex;
         justify-content: space-between;
         margin-bottom: 48px;
