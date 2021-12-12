@@ -1,6 +1,6 @@
-@import url(structure/_var.scss);
+@import "structure/_var.scss";
 
-@import url(structure/_mixins.scss);
+@import "structure/_mixins.scss";
 
 * {
     margin: 0;
@@ -30,7 +30,7 @@ body {
 }
 
 .header {
-    background-color: $bgcolar;
+    background-color: $bac-colar;
     color: #fff;
     padding: 18px 0;
     &-wrap {
@@ -65,7 +65,7 @@ body {
         font-weight: 900;
         font-size: 32px;
         line-height: 38px;
-        color: $bgcolar;
+        color: $bac-colar;
         border-left: 12px solid $colorletters;
         padding-left: 12px;
     }
@@ -73,7 +73,7 @@ body {
         font-weight: 900;
         font-size: 48px;
         line-height: 58px;
-        color: $bgcolar;
+        color: $bac-colar;
     }
     &-title-pink {
         color: $colorletters;
@@ -132,7 +132,7 @@ body {
     display: flex;
     justify-content: space-around;
     &-title {
-        color: $bgcolar;
+        color: $bac-colar;
         font-size: 30px;
         line-height: 36px;
         text-align: center;
@@ -412,10 +412,8 @@ body {
     justify-content: center;
 }
 .products-filters {
-color: $bgcolar;
+color: $bac-colar;
 }
-
-
 
 .products-navigation {
     display: flex;
@@ -442,7 +440,7 @@ color: $bgcolar;
     color: #C4C4C4;
 }
 .products-pag-linc-blac {
-    color: $bgcolar;
+    color: $bac-colar;
 }
 .products-pag-linc:hover {
     color: $colorletters;
@@ -450,8 +448,28 @@ color: $bgcolar;
 
 /* registration */
 
+.registration {
+    display: flex;
+    justify-content: center;
+	align-items: stretch;
+}
+.registration-input {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
 
+.registration-field {
+    border: none;
 
+}
+.registration-name {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: $bac-colar;
+    padding-bottom: 20px;
+}
 
 
 
