@@ -695,10 +695,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.registration-field {
-  border: none;
   margin-bottom: 20px;
   padding: 13px 277px 13px 17px;
 }
@@ -707,8 +703,6 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
-  color: #222222;
-  padding-bottom: 20px;
   padding: 20px 0 20px 0;
 }
 /*# sourceMappingURL=style.css.map */
