@@ -678,11 +678,18 @@ body {
   border: 1px solid #F16D7F;
   background-color: #F16D7F;
   padding: 16px 29px;
-  margin: 55px 0 113px 0;
+  margin: 39px 0 96px 0;
+  cursor: pointer;
 }
 
-.registration-button::before {
-  background-image: url(../img/arrow.svg);
+.registration-button .fa-long-arrow-alt-right {
+  margin-left: 20px;
+  margin-top: 1px;
+}
+
+.registration-button:hover {
+  color: #F16D7F;
+  background: #FFFFFF;
 }
 
 .registration-input {

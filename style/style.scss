@@ -481,11 +481,21 @@ color: $bac-colar;
         border: 1px solid $colorletters;
         background-color: $colorletters;
         padding: 16px 29px;
-        margin: 55px 0 113px 0;
+        margin: 39px 0 96px 0;
+        cursor: pointer;
+
     }
-    &-button::before {
-        background-image: url(../img/arrow.svg);
+    &-button .fa-long-arrow-alt-right {
+        margin-left: 20px;
+        margin-top: 1px;
     }
+    &-button:hover {
+        color: $colorletters;
+        background: #FFFFFF;
+    }
+
+
+
 
 }
 .registration-input {
