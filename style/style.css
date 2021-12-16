@@ -288,6 +288,24 @@ body {
           justify-content: center;
 }
 
+.features-discounts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.features-assurance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .features-name {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -624,25 +642,34 @@ body {
   color: #222222;
 }
 
+.color-pick {
+  color: #EF5B70;
+}
+
 .products-pag-linc:hover {
   color: #F16D7F;
 }
 
 /* registration */
-.registration {
+.registration-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .registration-field {
   border: none;
+}
+
+.registration-field-chec {
+  border: none;
+}
+
+.registration-form {
+  padding-right: 128px;
 }
 
 .registration-chec {
@@ -650,6 +677,27 @@ body {
   font-weight: 300;
   line-height: 13px;
   color: #000000;
+}
+
+.registration-name {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 64px 0 20px 0;
+}
+
+.registration-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  padding: 13px 200px 13px 17px;
 }
 
 .registration-input-chec {
@@ -692,24 +740,35 @@ body {
   background: #FFFFFF;
 }
 
-.registration-input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 20px;
-  padding: 13px 277px 13px 17px;
+.registration-heading {
+  margin: 64px 0 22px 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
 }
 
-.registration-name {
+.registration-subtitle {
   font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
-  padding: 20px 0 20px 0;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 21px;
+}
+
+.registration-text_txt {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 16px;
+}
+
+.registration-text_txt::before {
+  content: "";
+  background-image: url(../img/check-mark.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-right: 24px;
+  margin-right: 22px;
 }
 /*# sourceMappingURL=style.css.map */
