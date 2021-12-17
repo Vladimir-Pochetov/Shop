@@ -83,16 +83,24 @@ body {
         justify-content: center;
         flex-direction: column;
     }
-    &-wrap {
+    &-list {
+        list-style: none;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
+    &-link {
+        text-decoration: none;
+    }
     &-name-pink {
         color: #F16D7F;
+        font-size: 24px;
+        line-height: 29px;
     }
     &-item-white {
         color: #fff;
+        font-size: 16px;
+        line-height: 19px;
     }
     &-item-women {
         background-image: url(../img/offer-woman.jpg)
@@ -171,25 +179,101 @@ body {
     color: #FBFBFB;
     font-size: 19px;
     line-height: 24px;
-    &-title {
+
+    &-titles {
         display: flex;
         justify-content: space-between;
     }
+    &-delivery {
+        display: flex;
+        justify-content: center;
+    }
+    &-name {
+        display: flex;
+        justify-content: center;
+        font-size: 19.96px;
+        line-height: 24px;
+        color: #FBFBFB;
+        margin-top: 28px;
+    }
+    &-text {
+        text-align: center;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 17px;
+        color: #FBFBFB;
+        margin-top: 16px;
+    }
+
+
 }
 
 .connection {
-	background-image: url(../img/photo-subscribe.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-
-    &-reviews-icon {
-        margin-top: 97px;
-    }
+    background: url("../img/photo-subscribe.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 448px;
     &-reviews {
-        font-size: 20px;
-        line-height: 24px;
         display: flex;
         justify-content: space-between;
+    }
+    &-photo {
+        display: flex;
+        justify-content: center;
+
+        margin-top: 97px;
+        margin-bottom: 30px;
+    }
+    &-text {
+        font-size: 20px;
+        line-height: 24px;
+
+        color: #222224;
+        text-align: center;
+        width: 359px;
+    }
+    &-text-big {
+        font-size: 24px;
+        text-align: center;
+        color: #222224;
+    }
+    &-text-small {
+        font-size: 18px;
+        text-align: center;
+        color: #222224;
+        padding-bottom: 32px;
+    }
+    &-subscribe {
+        padding-top: 150px;
+    }
+    &-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-field {
+        width: 256px;
+        padding: 22px ;
+        background: #E1E1E1;
+        border: none;
+        border-radius: 28px 0 0 28px;
+    }
+    &-field::placeholder {
+        font-size: 14px;
+        line-height: 17px;
+        color: #222224;
+        opacity: 0.67;
+    }
+    &-btn {
+        padding: 22px 14px;
+        background-color: #F16D7F;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 0 28px 28px 0;
+
     }
 
 }
