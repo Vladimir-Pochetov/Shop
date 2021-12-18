@@ -46,22 +46,28 @@ body {
 .header-logo-link {
   margin-right: 41px;
   text-decoration: none;
+  color: transparent;
 }
 
 .header-search-link {
   text-decoration: none;
+  color: transparent;
 }
 
 .header-burger-linc {
   text-decoration: none;
+  color: transparent;
 }
 
 .header-user-linc {
+  text-decoration: none;
+  color: transparent;
   margin: 33px;
 }
 
-.header-logo-link {
+.header-basket-linc {
   text-decoration: none;
+  color: transparent;
 }
 
 .promo {
