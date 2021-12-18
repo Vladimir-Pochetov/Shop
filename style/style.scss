@@ -1,7 +1,5 @@
 @import "structure/_var.scss";
 
-@import "structure/_mixins.scss";
-
 @mixin flex {
   display: flex;
   justify-content: space-between;
@@ -11,12 +9,6 @@
 @mixin text-decor {
   text-decoration: none;
   color: transparent;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 /*.button {
@@ -31,14 +23,19 @@
     }
 }*/
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: "Lato", sans-serif;
 }
-// home
 .wrap {
   width: 1140px;
   margin: 0 auto;
 }
+// home
 
 @import "blocks/header";
 
@@ -222,6 +219,7 @@ body {
     margin-bottom: 30px;
   }
   &-text {
+    font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     color: $app-color;
@@ -235,7 +233,9 @@ body {
     color: $app-color;
   }
   &-text-big {
+    font-weight: 700;
     font-size: 24px;
+    padding-bottom: 16px;
     text-align: center;
     color: $app-color;
   }
