@@ -1,0 +1,31 @@
+.promo {
+  background-color: #f1e4e6;
+  height: 765px;
+  &-wrap {
+    background-image: url(../img/promo-card.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 765px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  &-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 38px;
+    color: $bac-colar;
+    border-left: 12px solid $colorletters;
+    padding-left: 12px;
+  }
+  &-title-big {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: $bac-colar;
+  }
+  &-title-pink {
+    color: $colorletters;
+  }
+}
