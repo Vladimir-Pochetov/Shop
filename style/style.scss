@@ -73,10 +73,10 @@ body {
     line-height: 19px;
   }
   &-item-women {
-    background-image: url(../img/offer-woman.jpg);
+    background-image: url(../img/offer-women.jpg);
   }
   &-item-men {
-    background-image: url(../img/offer-man.jpg);
+    background-image: url(../img/offer-men.jpg);
   }
   &-item-kids {
     background-image: url(../img/offer-kids.jpg);
@@ -119,6 +119,41 @@ body {
     width: 360px;
     background-color: #f8f8f8;
     margin-bottom: 30px;
+    position: relative;
+  }
+  &-card:hover .products-overlay {
+    opacity: 1;
+  }
+  &-overlay {
+    background-color: rgba(58, 56, 56, 0.86);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 450px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-img {
+    padding-right: 11px;
+  }
+  &-btn {
+    font-family: inherit;
+    border: 1px solid #fff;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding: 11px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  &-btn:hover {
+    transform: scale(1.1);
   }
   &-linc {
     text-decoration: none;
@@ -146,6 +181,7 @@ body {
     padding: 0 0 20px 18px;
   }
   &-button {
+    font-family: inherit;
     display: flex;
     justify-content: center;
     &-btn {

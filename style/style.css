@@ -162,11 +162,11 @@ body {
 }
 
 .offer-item-women {
-  background-image: url(../img/offer-woman.jpg);
+  background-image: url(../img/offer-women.jpg);
 }
 
 .offer-item-men {
-  background-image: url(../img/offer-man.jpg);
+  background-image: url(../img/offer-men.jpg);
 }
 
 .offer-item-kids {
@@ -223,6 +223,60 @@ body {
   width: 360px;
   background-color: #f8f8f8;
   margin-bottom: 30px;
+  position: relative;
+}
+
+.products-card:hover .products-overlay {
+  opacity: 1;
+}
+
+.products-overlay {
+  background-color: rgba(58, 56, 56, 0.86);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 450px;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.products-img {
+  padding-right: 11px;
+}
+
+.products-btn {
+  font-family: inherit;
+  border: 1px solid #fff;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 11px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.products-btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .products-linc {
@@ -256,6 +310,7 @@ body {
 }
 
 .products-button {
+  font-family: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
