@@ -733,13 +733,13 @@ body {
   margin-bottom: 96px;
 }
 
-.products-pag {
+.products-psgination_item {
   list-style: none;
   text-decoration: none;
   background: #ffffff;
 }
 
-.products-pag-linc {
+.products-psgination_linc {
   text-decoration: none;
   font-weight: 300;
   font-size: 16px;
@@ -747,7 +747,7 @@ body {
   color: #c4c4c4;
 }
 
-.products-pag-linc-blac {
+.products-psgination_linc-blac {
   color: #222222;
 }
 
@@ -755,7 +755,7 @@ body {
   color: #ef5b70;
 }
 
-.products-pag-linc:hover {
+.products-psgination_linc:hover {
   color: #F16D7F;
 }
 

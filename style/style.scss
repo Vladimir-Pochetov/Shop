@@ -41,53 +41,7 @@ body {
 
 @import "blocks/promo";
 
-.offer {
-  padding-top: 65px;
-  &-item {
-    width: 360px;
-    height: 260px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  &-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  &-link {
-    text-decoration: none;
-  }
-  &-name-pink {
-    color: $colorletters;
-    font-size: 24px;
-    line-height: 29px;
-  }
-  &-item-white {
-    color: #fff;
-    font-size: 16px;
-    line-height: 19px;
-  }
-  &-item-women {
-    background-image: url(../img/offer-women.jpg);
-  }
-  &-item-men {
-    background-image: url(../img/offer-men.jpg);
-  }
-  &-item-kids {
-    background-image: url(../img/offer-kids.jpg);
-  }
-  &-item-accesories {
-    background-image: url(../img/offer-accesories.jpg);
-    width: 100%;
-    height: 180px;
-    margin-top: 30px;
-  }
-}
+@import "blocks/offer";
 
 .products {
   display: flex;
@@ -451,25 +405,25 @@ body {
   padding: 15px 16px;
   margin-bottom: 96px;
 }
-.products-pag {
+.products-psgination_item {
   list-style: none;
   text-decoration: none;
   background: #ffffff;
 }
-.products-pag-linc {
+.products-psgination_linc {
   text-decoration: none;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
   color: #c4c4c4;
 }
-.products-pag-linc-blac {
+.products-psgination_linc-blac {
   color: $bac-colar;
 }
 .color-pick {
   color: #ef5b70;
 }
-.products-pag-linc:hover {
+.products-psgination_linc:hover {
   color: $colorletters;
 }
 .products-navigation {
