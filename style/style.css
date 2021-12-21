@@ -43,31 +43,41 @@ body {
           align-items: center;
 }
 
-.header-logo-link {
+.header-logo_link {
   margin-right: 41px;
   text-decoration: none;
   color: transparent;
 }
 
-.header-search-link {
+.header-search_link {
+  text-decoration: none;
+  color: transparent;
+  fill: #E8E8E8;
+}
+
+.header-burger_linc {
+  fill: #E8E8E8;
   text-decoration: none;
   color: transparent;
 }
 
-.header-burger-linc {
-  text-decoration: none;
-  color: transparent;
-}
-
-.header-user-linc {
+.header-user_linc {
+  fill: #E8E8E8;
   text-decoration: none;
   color: transparent;
   margin: 33px;
 }
 
-.header-basket-linc {
+.header-basket_linc {
+  fill: #E8E8E8;
   text-decoration: none;
   color: transparent;
+}
+
+.header-img:hover {
+  fill: #F16D7F;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .promo {
@@ -624,12 +634,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .footer-socials:hover {
@@ -637,6 +645,8 @@ body {
   background-color: #F16D7F;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .inner {

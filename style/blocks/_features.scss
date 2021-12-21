@@ -1,0 +1,40 @@
+.features {
+  background-color: $app-color;
+  padding: 103px 0;
+  color: #fbfbfb;
+  font-size: 19px;
+  line-height: 24px;
+  &-titles {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-delivery {
+    display: flex;
+    justify-content: center;
+  }
+  &-discounts {
+    display: flex;
+    justify-content: center;
+  }
+  &-assurance {
+    display: flex;
+    justify-content: center;
+  }
+  &-name {
+    display: flex;
+    justify-content: center;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #fbfbfb;
+    margin-top: 28px;
+  }
+
+  &-text {
+    text-align: center;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 17px;
+    color: #fbfbfb;
+    margin-top: 16px;
+  }
+}

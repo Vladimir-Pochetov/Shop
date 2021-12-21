@@ -5,21 +5,29 @@
   &-wrap {
     @include flex;
   }
-  &-logo-link {
+  &-logo_link {
     margin-right: 41px;
     @include text-decor;
   }
-  &-search-link {
+  &-search_link {
+    @include text-decor;
+    fill: $colormain;
+  }
+  &-burger_linc {
+    fill: $colormain;
     @include text-decor;
   }
-  &-burger-linc {
-    @include text-decor;
-  }
-  &-user-linc {
+  &-user_linc {
+    fill: $colormain;
     @include text-decor;
     margin: 33px;
   }
-  &-basket-linc {
+  &-basket_linc {
+    fill: $colormain;
     @include text-decor;
+  }
+  &-img:hover {
+    fill: $colorletters;
+    transition-duration: 0.5s;
   }
 }
