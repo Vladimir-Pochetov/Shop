@@ -227,7 +227,35 @@ body {
 }
 
 .products-card:hover .products-overlay {
+  -webkit-animation: down 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+          animation: down 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) both;
   opacity: 1;
+}
+
+@-webkit-keyframes down {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes down {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
+  }
 }
 
 .products-overlay {
@@ -236,7 +264,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 450px;
+  height: 420px;
   opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -325,11 +353,19 @@ body {
   border: 1px solid #f26376;
   padding: 15px 39px;
   margin: 48px 0 98px 0;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition: -webkit-transform 1.5s;
+  transition: -webkit-transform 1.5s;
+  transition: transform 1.5s;
+  transition: transform 1.5s, -webkit-transform 1.5s;
 }
 
 .products-button-btn:hover {
   background-color: #F16D7F;
   color: #ffffff;
+  -webkit-transform: rotateX(360deg);
+          transform: rotateX(360deg);
 }
 
 .features {
@@ -442,15 +478,23 @@ body {
 }
 
 .connection-text-big {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: 700;
   font-size: 24px;
-  padding-bottom: 16px;
+  line-height: 40px;
   text-align: center;
   color: #222224;
 }
 
 .connection-text-small {
   font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
   text-align: center;
   color: #222224;
   padding-bottom: 32px;
@@ -478,6 +522,7 @@ body {
   background: #e1e1e1;
   border: none;
   border-radius: 28px 0 0 28px;
+  border-color: #e1e1e1;
 }
 
 .connection-field::-webkit-input-placeholder {
@@ -509,6 +554,7 @@ body {
 }
 
 .connection-btn {
+  font-family: inherit;
   padding: 22px 14px;
   background-color: #F16D7F;
   font-size: 14px;
@@ -519,6 +565,13 @@ body {
   color: #ffffff;
   border: none;
   border-radius: 0 28px 28px 0;
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.connection-btn:hover {
+  background-color: #e05c6e;
 }
 
 .footer {
@@ -571,13 +624,19 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .footer-socials:hover {
   color: #ffffff;
   background-color: #F16D7F;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .inner {
@@ -647,8 +706,6 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #636363;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
 }
 
 .inner-linc:hover {
@@ -661,34 +718,6 @@ body {
   line-height: 17px;
   color: #F16D7F;
   font-weight: 700;
-}
-
-.products-filters {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.products-indication {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.products-filters {
-  color: #222222;
-}
-
-.products-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .products-pagination {
@@ -728,6 +757,15 @@ body {
 
 .products-pag-linc:hover {
   color: #F16D7F;
+}
+
+.products-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* registration */

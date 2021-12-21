@@ -122,7 +122,18 @@ body {
     position: relative;
   }
   &-card:hover .products-overlay {
+    animation: down 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) both;
     opacity: 1;
+  }
+  @keyframes down {
+    0% {
+      transform: scaleY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scaleY(1);
+      opacity: 1;
+    }
   }
   &-overlay {
     background-color: rgba(58, 56, 56, 0.86);
@@ -130,7 +141,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    height: 450px;
+    height: 420px;
     opacity: 0;
     display: flex;
     align-items: center;
@@ -190,11 +201,17 @@ body {
       border: 1px solid #f26376;
       padding: 15px 39px;
       margin: 48px 0 98px 0;
+
+      transition-duration: 0.3s;
+      transition: transform 1.5s;
     }
   }
   &-button-btn:hover {
     background-color: $colorletters;
     color: #ffffff;
+    
+    transform: rotateX(360deg);
+    
   }
 }
 
@@ -269,14 +286,18 @@ body {
     color: $app-color;
   }
   &-text-big {
+    display: flex;
+    justify-content: center;
     font-weight: 700;
     font-size: 24px;
-    padding-bottom: 16px;
+    line-height: 40px;
     text-align: center;
     color: $app-color;
   }
   &-text-small {
     font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
     text-align: center;
     color: $app-color;
     padding-bottom: 32px;
@@ -295,6 +316,7 @@ body {
     background: #e1e1e1;
     border: none;
     border-radius: 28px 0 0 28px;
+    border-color: #e1e1e1;
   }
   &-field::placeholder {
     font-size: 14px;
@@ -303,6 +325,7 @@ body {
     opacity: 0.67;
   }
   &-btn {
+    font-family: inherit;
     padding: 22px 14px;
     background-color: $colorletters;
     font-size: 14px;
@@ -311,6 +334,11 @@ body {
     color: #ffffff;
     border: none;
     border-radius: 0 28px 28px 0;
+    cursor: pointer;
+    transition-duration: 0.5s;
+  }
+  &-btn:hover {
+    background-color: #e05c6e;
   }
 }
 
@@ -343,11 +371,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-duration: 0.4s;
+    transition: transform 0.3s;
   }
   &-socials:hover {
     color: #ffffff;
     background-color: $colorletters;
-    transition: 0.2s;
+    transform: scale(1.1);
   }
 }
 // home end
@@ -400,7 +430,6 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: #636363;
-    transition: 0.2s;
   }
   &-linc:hover {
     text-decoration: underline;
@@ -413,21 +442,7 @@ body {
     font-weight: 700;
   }
 }
-.products-filters {
-  display: flex;
-}
-.products-indication {
-  display: flex;
-  justify-content: center;
-}
-.products-filters {
-  color: $bac-colar;
-}
 
-.products-navigation {
-  display: flex;
-  justify-content: center;
-}
 .products-pagination {
   display: flex;
   justify-content: space-between;
@@ -456,6 +471,10 @@ body {
 }
 .products-pag-linc:hover {
   color: $colorletters;
+}
+.products-navigation {
+  display: flex;
+  justify-content: center;
 }
 
 /* registration */
