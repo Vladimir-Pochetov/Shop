@@ -208,6 +208,7 @@ body {
     color: #FBFBFB;
     font-size: 19px;
     line-height: 24px;
+
     &-titles {
         display: flex;
         justify-content: space-between;
@@ -247,12 +248,14 @@ body {
     &-photo {
         display: flex;
         justify-content: center;
+
         margin-top: 97px;
         margin-bottom: 30px;
     }
     &-text {
         font-size: 20px;
         line-height: 24px;
+
         color: #222224;
         text-align: center;
         width: 359px;
@@ -298,7 +301,9 @@ body {
         color: #FFFFFF;
         border: none;
         border-radius: 0 28px 28px 0;
+
     }
+
 }
 
 .footer {
