@@ -285,7 +285,9 @@ body {
   line-height: 24px;
 }
 
+
 .features-titles {
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -293,6 +295,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
 
 .features-delivery {
   display: -webkit-box;
@@ -343,11 +346,12 @@ body {
   margin-top: 16px;
 }
 
+
 .connection {
-  background: url("../img/photo-subscribe.png");
+  background-image: url(../img/photo-subscribe.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 448px;
+
 }
 
 .connection-reviews {
@@ -373,6 +377,7 @@ body {
 .connection-text {
   font-size: 20px;
   line-height: 24px;
+
   color: #222224;
   text-align: center;
   width: 359px;
@@ -461,6 +466,7 @@ body {
   color: #ffffff;
   border: none;
   border-radius: 0 28px 28px 0;
+
 }
 
 .footer {

@@ -242,9 +242,11 @@ body {
     justify-content: center;
     font-size: 19.96px;
     line-height: 24px;
+
     color: #fbfbfb;
     margin-top: 28px;
   }
+
 
   &-text {
     text-align: center;
@@ -326,7 +328,8 @@ body {
     border: none;
     border-radius: 0 28px 28px 0;
   }
-}
+
+ 
 
 .footer {
   background-color: $app-color;
