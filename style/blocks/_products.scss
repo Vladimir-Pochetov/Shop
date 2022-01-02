@@ -30,7 +30,7 @@
     margin-bottom: 30px;
     position: relative;
   }
-  &-card:hover .products-overlay {
+  &-card:hover &-overlay {
     animation: down 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) both;
     opacity: 1;
   }

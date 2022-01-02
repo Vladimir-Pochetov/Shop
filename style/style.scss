@@ -113,6 +113,108 @@ body {
     font-weight: 700;
   }
 }
+.navigation {
+  padding-bottom: 64px;
+  
+  &-wrap {
+    display: flex;
+    position: relative;
+    z-index: 10;
+  }
+  
+  &-filter summary  {
+    list-style: none;
+  }
+  &-filter[open] &-filter_name {
+    color: $colornav;
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    background: #FFFFFF;
+  }
+  &-filter_name {
+    width: 360px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+    padding: 13px 0 16px 16px;
+  }
+  &-filter_name::after {
+    content: "";
+    background-image: url(/img/navigation-filter.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 15px;
+    margin-left: 11px;
+    color: #000000;
+  }
+  &-fiter_content {
+    position: absolute;
+    width: 360px;
+    left: 0;
+    background: #FFFFFF;
+  }
+  &-filter_title[open] &-filter_category {
+    font-size: 14px;
+    line-height: 17px;
+    color: $colornav;
+  }
+  &-filter_category {
+    width: 360px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    cursor: pointer;
+    background: #FFFFFF;
+    padding: 11px 0 11px 11px;
+    border-left: 5px solid $colorletters;
+    margin: 0 0 18px 11px;
+    border-bottom: 1px solid #EBEBEB;
+  }
+  &-filter_item {
+    list-style: none;
+    padding: 0 0 11px 33px;
+    
+  }
+  &-filter-link {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #6F6E6E;
+  }
+  &-option {
+    display: flex;
+    list-style: none;
+    margin-left: 30px;
+  }
+  &-option_title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    padding-top: 13px;
+    cursor: pointer;
+    
+  }
+  &-option_title::after {
+    content: "";
+    background-image: url(/img/arrow2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 10px;
+    padding-right: 27px;
+  }
+  
+}
+
+
 
 .products-pagination {
   display: flex;
@@ -147,6 +249,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
 
 /* registration */
 

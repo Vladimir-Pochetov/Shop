@@ -5,6 +5,9 @@
   &-wrap {
     @include flex;
   }
+  &-burger_nav {
+    position: relative;
+  }
   &-logo_link {
     margin-right: 41px;
     @include text-decor;
@@ -16,6 +19,47 @@
   &-burger_linc {
     fill: $colormain;
     @include text-decor;
+  }
+  &-burger_list {
+    list-style: none;
+    background: #fff;
+    width: 232px;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    position: absolute;
+    top: 55px;
+    left: 315px;
+    transform: scalex(0);
+    transform-origin: right top;
+  }
+  &-burger_linc:hover &-burger_list {
+    transform: scalex(1);
+  }
+  &-burger_name {
+    font-weight: 700;
+    color: black;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 8px 0 24px 34px;
+  }
+  &-burger_title {
+    color: $colorletters;
+    padding: 24px 0 12px 33px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  &-burger_subtitle {
+    color: #6F6E6E;
+    padding: 0 0 11px 54px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  &-burger_2::after {
+    padding-bottom: 33px;
+  }
+  &-burger_img {
+    padding: 16px 16px 0 203px;
   }
   &-user_linc {
     fill: $colormain;
