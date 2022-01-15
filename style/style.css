@@ -25,6 +25,20 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 1200px) {
+  .wrap {
+    width: 735px;
+    border: 1px solid blue;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrap {
+    width: 343px;
+    border: 1px solid green;
+  }
+}
+
 .header {
   background-color: #222222;
   color: #fff;
@@ -51,6 +65,18 @@ body {
   margin-right: 41px;
   text-decoration: none;
   color: transparent;
+}
+
+@media (max-width: 1200px) {
+  .header-logo_link {
+    margin-left: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-logo_link {
+    margin-left: 0;
+  }
 }
 
 .header-search_link {
@@ -122,13 +148,31 @@ body {
   fill: #E8E8E8;
   text-decoration: none;
   color: transparent;
-  margin: 33px;
+  margin: 0 42px 0 25px;
+}
+
+@media (max-width: 767px) {
+  .header-user_linc {
+    display: none;
+  }
 }
 
 .header-basket_linc {
   fill: #E8E8E8;
   text-decoration: none;
   color: transparent;
+}
+
+@media (max-width: 1200px) {
+  .header-basket_linc {
+    margin-right: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-basket_linc {
+    display: none;
+  }
 }
 
 .header-img:hover {
@@ -142,11 +186,17 @@ body {
   height: 765px;
 }
 
+@media (max-width: 1200px) {
+  .promo {
+    height: 367px;
+  }
+}
+
 .promo-wrap {
   background-image: url(../img/promo-card.png);
   background-repeat: no-repeat;
   background-size: contain;
-  height: 765px;
+  height: 764px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,6 +208,19 @@ body {
           justify-content: end;
 }
 
+@media (max-width: 1200px) {
+  .promo-wrap {
+    height: 367px;
+    background-position-x: 94px;
+  }
+}
+
+@media (max-width: 767px) {
+  .promo-wrap {
+    background-image: none;
+  }
+}
+
 .promo-title {
   font-weight: 900;
   font-size: 32px;
@@ -167,6 +230,23 @@ body {
   padding-left: 12px;
 }
 
+@media (max-width: 1200px) {
+  .promo-title {
+    font-size: 24px;
+    line-height: 29px;
+    margin-right: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .promo-title {
+    font-size: 20px;
+    line-height: 24px;
+    border-left: 12px solid #F16D7F;
+    margin-right: 40px;
+  }
+}
+
 .promo-title-big {
   font-weight: 900;
   font-size: 48px;
@@ -174,8 +254,36 @@ body {
   color: #222222;
 }
 
+@media (max-width: 1200px) {
+  .promo-title-big {
+    font-size: 44px;
+    line-height: 53px;
+  }
+}
+
+@media (max-width: 767px) {
+  .promo-title-big {
+    font-size: 38px;
+    line-height: 46px;
+  }
+}
+
 .promo-title-pink {
   color: #F16D7F;
+}
+
+@media (max-width: 1200px) {
+  .promo-title-pink {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+@media (max-width: 767px) {
+  .promo-title-pink {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .offer {

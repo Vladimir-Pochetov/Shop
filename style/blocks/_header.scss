@@ -11,6 +11,14 @@
   &-logo_link {
     margin-right: 41px;
     @include text-decor;
+
+    @media (max-width: 1200px) {
+      margin-left: 16px;
+    }
+
+    @media (max-width: 767px) {
+      margin-left: 0;
+    }
   }
   &-search_link {
     @include text-decor;
@@ -65,11 +73,23 @@
   &-user_linc {
     fill: $colormain;
     @include text-decor;
-    margin: 33px;
+    margin: 0 42px 0 25px;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
   &-basket_linc {
     fill: $colormain;
     @include text-decor;
+
+    @media (max-width: 1200px) {
+      margin-right: 12px;
+    }
+
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
   &-img:hover {
     fill: $colorletters;

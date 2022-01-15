@@ -36,6 +36,16 @@ body {
 .wrap {
   width: 1140px;
   margin: 0 auto;
+
+  @media (max-width: 1200px) {
+    width: 735px;
+    border: 1px solid blue;
+  }
+
+  @media (max-width: 767px) {
+    width: 343px;
+    border: 1px solid green;
+  }
 }
 
 @import "blocks/header";
