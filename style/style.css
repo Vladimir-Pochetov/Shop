@@ -290,6 +290,12 @@ body {
   padding-top: 65px;
 }
 
+@media (max-width: 1200px) {
+  .offer {
+    padding-top: 20px;
+  }
+}
+
 .offer-item {
   width: 360px;
   height: 260px;
