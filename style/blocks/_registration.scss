@@ -1,0 +1,95 @@
+.registration {
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-field {
+    border: none;
+  }
+  &-field-chec {
+    border: none;
+  }
+  &-form {
+    padding-right: 128px;
+  }
+  &-chec {
+    padding-right: 20px;
+    font-weight: 300;
+    line-height: 13px;
+    color: #000000;
+  }
+  &-name {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 64px 0 20px 0;
+  }
+
+  &-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 13px 200px 13px 17px;
+  }
+  &-input-chec {
+    margin-right: 10px;
+    border: 1px solid #a4a4a4;
+  }
+  &-text {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #b1b1b1;
+    width: 359px;
+    margin-top: 15px;
+  }
+
+  &-button {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid $colorletters;
+    background-color: $colorletters;
+    padding: 16px 29px;
+    margin: 39px 0 96px 0;
+    cursor: pointer;
+  }
+  &-button .fa-long-arrow-alt-right {
+    margin-left: 20px;
+    margin-top: 1px;
+  }
+  &-button:hover {
+    color: $colorletters;
+    background: #ffffff;
+  }
+  &-heading {
+    margin: 64px 0 22px 0;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+  }
+  &-subtitle {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 21px;
+  }
+  &-text_txt {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 16px;
+  }
+  &-text_txt::before {
+    content: "";
+    background-image: url(../img/check-mark.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-right: 24px;
+    margin-right: 22px;
+  }
+}
