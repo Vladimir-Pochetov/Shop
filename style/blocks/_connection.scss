@@ -1,0 +1,85 @@
+.connection {
+  background: url("../img/photo-subscribe.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 448px;
+  &-reviews {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-photo {
+    display: flex;
+    justify-content: center;
+    margin-top: 97px;
+    margin-bottom: 30px;
+  }
+  &-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: $app-color;
+    text-align: center;
+    width: 359px;
+  }
+  &-text-italic {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: $app-color;
+  }
+  &-text-big {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color: $app-color;
+  }
+  &-text-small {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: $app-color;
+    padding-bottom: 32px;
+  }
+  &-subscribe {
+    padding-top: 150px;
+  }
+  &-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-field {
+    width: 256px;
+    padding: 22px;
+    background: #e1e1e1;
+    border: none;
+    border-radius: 28px 0 0 28px;
+    border-color: #e1e1e1;
+  }
+  &-field::placeholder {
+    font-size: 14px;
+    line-height: 17px;
+    color: $app-color;
+    opacity: 0.67;
+  }
+  &-btn {
+    font-family: inherit;
+    padding: 22px 14px;
+    background-color: $colorletters;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    color: #ffffff;
+    border: none;
+    border-radius: 0 28px 28px 0;
+    cursor: pointer;
+    transition-duration: 0.5s;
+  }
+  &-btn:hover {
+    background-color: #e05c6e;
+  }
+}
