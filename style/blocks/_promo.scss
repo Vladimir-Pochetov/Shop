@@ -1,14 +1,26 @@
 .promo {
   background-color: #f1e4e6;
   height: 765px;
+  @media (max-width: 1200px) {
+    height: 367px;
+  }
   &-wrap {
     background-image: url(../img/promo-card.png);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 765px;
+    height: 764px;
     display: flex;
     align-items: center;
     justify-content: end;
+
+    @media (max-width: 1200px) {
+      height: 367px;
+      background-position-x: 94px;
+    }
+
+    @media (max-width: 767px) {
+      background-image: none;
+    }
   }
 
   &-title {
@@ -18,14 +30,47 @@
     color: $bac-colar;
     border-left: 12px solid $colorletters;
     padding-left: 12px;
+
+    @media (max-width: 1200px) {
+      font-size: 24px;
+      line-height: 29px;
+      margin-right: 16px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 20px;
+      line-height: 24px;
+      border-left: 12px solid $colorletters;
+      margin-right: 40px;
+    }
   }
   &-title-big {
     font-weight: 900;
     font-size: 48px;
     line-height: 58px;
     color: $bac-colar;
+
+    @media (max-width: 1200px) {
+      font-size: 44px;
+      line-height: 53px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 38px;
+      line-height: 46px;
+    }
   }
   &-title-pink {
     color: $colorletters;
+
+    @media (max-width: 1200px) {
+      font-size: 24px;
+      line-height: 29px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 }

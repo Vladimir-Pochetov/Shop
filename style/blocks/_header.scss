@@ -11,6 +11,14 @@
   &-logo_link {
     margin-right: 41px;
     @include text-decor;
+
+    @media (max-width: 1200px) {
+      margin-left: 16px;
+    }
+
+    @media (max-width: 767px) {
+      margin-left: 0;
+    }
   }
   &-search_link {
     @include text-decor;
@@ -24,6 +32,7 @@
     list-style: none;
     background: #fff;
     width: 232px;
+    height: 764px;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     position: absolute;
     top: 55px;
@@ -39,7 +48,7 @@
     color: black;
     font-size: 14px;
     line-height: 17px;
-    padding: 8px 0 24px 34px;
+    padding: 8px 0 0 34px;
   }
   &-burger_title {
     color: $colorletters;
@@ -64,11 +73,23 @@
   &-user_linc {
     fill: $colormain;
     @include text-decor;
-    margin: 33px;
+    margin: 0 42px 0 25px;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
   &-basket_linc {
     fill: $colormain;
     @include text-decor;
+
+    @media (max-width: 1200px) {
+      margin-right: 12px;
+    }
+
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
   &-img:hover {
     fill: $colorletters;
