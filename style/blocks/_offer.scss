@@ -1,5 +1,9 @@
 .offer {
   padding-top: 65px;
+
+  @media (max-width: 1200px) {
+    padding-top: 20px;
+  }
   &-item {
     width: 360px;
     height: 260px;
@@ -43,5 +47,7 @@
     width: 100%;
     height: 180px;
     margin-top: 30px;
+
   }
+
 }
