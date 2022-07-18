@@ -1,4 +1,5 @@
 .navigation {
+  padding-top: 51px;
   padding-bottom: 64px;
 
   &-wrap {
@@ -79,6 +80,7 @@
     list-style: none;
     margin-left: 30px;
   }
+  
   &-option_title {
     font-weight: 400;
     font-size: 14px;
@@ -86,6 +88,7 @@
     color: #6F6E6E;
     padding-top: 13px;
     cursor: pointer;
+    list-style: none;
 
   }
   &-option_title::after {

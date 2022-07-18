@@ -1,0 +1,28 @@
+.slider {
+	background-color: #eee;
+	width: 100%;
+	
+  
+  &-wrap {
+	  display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+  }
+  
+  &-btn {
+    background-color: grey;
+		color: #fff;
+		padding: 10px;
+		border: 1px solid #000;
+  }
+
+	&-btn-left {
+		left: 5px;
+	}
+	
+	&-btn-right {
+		right: 5px;
+	}
+
+}
