@@ -1,0 +1,41 @@
+
+//Base
+
+@import "structure/_var.scss";
+
+
+//home
+
+@import "blocks/header";
+
+@import "blocks/promo";
+
+@import "blocks/offer";
+
+@import "blocks/products";
+
+@import "blocks/features";
+
+@import "blocks/connection";
+
+@import "blocks/footer";
+
+// home end
+
+// catalog
+
+@import "blocks/inner";
+
+
+
+@import "blocks/navigation";
+
+/* registration */
+
+@import "blocks/registration";
+
+// product
+
+@import "blocks/slider";
+
+@import "blocks/description"

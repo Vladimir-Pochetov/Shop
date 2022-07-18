@@ -1,15 +1,6 @@
-@import "structure/_var.scss";
 
-@mixin flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-@mixin text-decor {
-  text-decoration: none;
-  color: transparent;
-}
+
 
 * {
   margin: 0;
@@ -48,110 +39,26 @@ body {
   }
 }
 
-@import "blocks/header";
 
-@import "blocks/promo";
 
-@import "blocks/offer";
+
 
 @import "blocks/products";
-
 
 @import "blocks/features";
 
 @import "blocks/connection";
 
 @import "blocks/footer";
+
  
 
 // home end
 
 // catalog
-.inner {
-  background-color: #f8f3f4;
-  display: flex;
-  justify-content: space-around;
-  height: 148px;
-  margin-bottom: 51px;
-  &-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
-    @media (max-width: 767px) {
-      flex-direction: column;
-    }
-  }
-  &-name {
-    color: $colorletters;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
 
-    @media (max-width: 767px) {
-      font-size: 24px;
-      line-height: 29px;
-      margin-top: 24px;
-    }
-  }
-  &-navigation-bar {
-    padding: 20px;
-  }
-  &-navigation {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
 
-    @media (max-width: 767px) {
-      font-weight: 300;
-      font-size: 14px;
-      line-height: 17px;
-      margin-bottom: 46px;
-    }
-  }
-  &-nav {
-    margin: 6px;
-
-    @media (max-width: 767px) {
-      margin: 5px;
-    }
-  }
-  &-nav::before {
-    content: "/";
-    margin-right: 10px;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #636363;
-
-    @media (max-width: 767px) {
-      margin-right: 4px;
-    }
-  }
-  &-nav:first-child::before {
-    display: none;
-  }
-  &-linc {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #636363;
-    transition: 0.2s;
-  }
-  &-linc:hover {
-    text-decoration: underline;
-  }
-  &-linc--current {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
-    color: $colorletters;
-    font-weight: 700;
-  }
-}
 .products-filters {
   display: flex;
 }
@@ -196,11 +103,4 @@ body {
 .products-pagination_linc:hover {
   color: $colorletters;
 }
-
-@import "blocks/navigation";
-
-/* registration */
-
-@import "blocks/registration";
-
 
